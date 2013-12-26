@@ -15,6 +15,7 @@ if (isset($_POST['nick'])) {
 		$_SESSION['user_id'] = $row['ID'];
 		$_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
 		echo "Вход выполнен";
+		header("Location: info.php");
 	}
 }
 #if (isset($_REQUEST[session_name()])) session_start();
@@ -23,8 +24,7 @@ if (isset($_SESSION['user_id']) AND $_SESSION['ip'] == $_SERVER['REMOTE_ADDR']) 
 	$query = "SELECT * FROM User WHERE ID='$id'";
 	$res = mysql_query($query);
 	$row = mysql_fetch_assoc($res);
-	require 'template.php';
-	echo "Привет, ".$row['Name'];
+	header("Location: info.php");
 }
 else {
 ?>

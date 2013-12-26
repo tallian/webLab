@@ -11,12 +11,12 @@ $is_master = $POST['type'];
 
 echo("<html>
 <head>
-        <title> Шаблон страницы </title>
+        <title> Результаты регистрации </title>
         <link rel='stylesheet' type='text/css' href='../style.css'>
 </head><body>
 <div class='wrap'>
         <div class='wrap'>
-                <div class='menu'> Информация о пользователе </div>
+                <div class='menu'> Результаты регистрации </div>
                 <div class='info0'></div>
         </div>
         <div class='wrap'>

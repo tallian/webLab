@@ -30,7 +30,7 @@ require '../php/logout.php'
 							<tr> <h4> <td> <a class='txt'> Пароль: </a> </td> <td>  <input type='password' name='pass' class='reg'> </td> </h4> </tr>
 							<tr> <h4> <td> <a class='txt'> Повторите пароль: </a> </td> <td>  <input type='password' name='conf' class='reg'> </td> </h4> </tr>
 							<tr> <h4> <td> <a class='txt'> Город: </a> </td> <td>  <input type='text' name='city' class='reg'> </td> </h4> </tr>
-							<tr> <h4> <td> <a class='txt'> Информация: </a> </td> <td>  <input type='text' name='info' class='reg'> </td> </h4> </tr>
+							<tr> <h4> <td> <a class='txt'> Информация: </a> </td> <td>  <input type='textarea' name='info' class='reg'> </td> </h4> </tr>
 							<tr> <h4> <td> </td> <td>
 								<select required name='type'>
 									<option value='0'> Мастер</option>
