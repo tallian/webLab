@@ -5,7 +5,7 @@ require 'connect.php';
 
 echo("<html>
 <head>
-        <title> Шаблон страницы </title>
+        <title> Информация о пользователе. </title>
         <link rel='stylesheet' type='text/css' href='../style.css'>
 </head><body>
 <div class='wrap'>
@@ -39,7 +39,7 @@ echo("<html>
 						case 2: echo "<div class='txt'> Вы - покупатель.</div>";
 								break;
 					}
-					echo "<div class='txt'> Вы можете <a href='change_profile.php'>изменить<a> или <a href='delete_profile.php'>удалить<a> профиль.</div>";
+					echo "<div class='txt'> Вы можете <a href='change_profile.php'>изменить<a> или <a href='delete_profile.php'>удалить<a> профиль, а так же <a href='logout.php'>выйти<a> из него</div>";
 				} else {
 					$uid = 0;
 					echo "<div class='txt'> Вы не авторизованы, <a href='in.php'>войдите<a> или <a href='reg.php'>зарегистрируйтесь<a></div>";

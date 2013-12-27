@@ -14,9 +14,6 @@ if(isset($_SESSION['user_id'])) {
 				if ($pass!=$_POST['conf']) {
 					echo "<div class='txt'>Введённые пароли не совпадают</div>";
 				} else {
-					$query = "SELECT * FROM User WHERE ID='$uid'";
-					$res = mysql_query($query);
-					$row = mysql_fetch_assoc($res);
 					$result = mysql_query("UPDATE User SET Name='$name', Nick='$nick', Password='$pass', Info='$info', City='$city' WHERE ID='$uid'");
 					//Если запрос пройдет успешно то в переменную result вернется true
 					if($result == 'true')

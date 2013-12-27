@@ -46,7 +46,7 @@ echo("
 </html>"); }
 
 else {
-		echo "<div class='txt'> Вы не авторизованы, <a href='in.php'>войдите<a> или <a href='reg.php'>зарегистрируйтесь<a></div>";
+		echo "Вы не авторизованы.";
 }
 
 
